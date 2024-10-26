@@ -10,15 +10,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v2
       
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v2
         with:
           node-version: '14'
 
       - name: Install Dependencies
+        working-directory: hello_world_app  # 指定到子目录
         run: npm install
 
       - name: Build APK
+        working-directory: hello_world_app  # 指定到子目录
         run: npm run build:app-plus
