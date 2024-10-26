@@ -1,0 +1,12 @@
+npm install postcss@8
+npm install --save-dev cross-env
+npm install @dcloudio/uni-uts-v1
+
+npm install
+npm update
+npm cache clean --force
+npm run build:app-plus
+
+npm update uts-progressNotification
+
+npx @dcloudio/uvm@latest
