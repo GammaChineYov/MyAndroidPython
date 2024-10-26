@@ -10,3 +10,14 @@ npm run build:app-plus
 npm update uts-progressNotification
 
 npx @dcloudio/uvm@latest
+wget -O SDK-Android.zip https://web-ext-storage.dcloud.net.cn/unimpsdk/android/SDK-Android@4.29-20241008.zip
+
+export ANDROID_HOME=/usr/local/android
+unset ANDROID_SDK_ROOT
+source ~/.bashrc
+
+yes|sdkmanager --licenses
+./gradlew assembleDebug
+
+yarn add qrcode
+yarn add vue@^3

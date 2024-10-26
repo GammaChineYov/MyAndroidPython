@@ -12,13 +12,14 @@
 		"ghcr.io/devcontainers/features/github-cli:1": {},
 		"ghcr.io/devcontainers/features/python:1": {},
 		"ghcr.io/nordcominc/devcontainer-features/android-sdk:1": {},
-		"ghcr.io/casl0/devcontainer-features/android-sdk:1": {},
-		"ghcr.io/devcontainers-extra/features/vue-cli:2": {}
+		"ghcr.io/devcontainers-extra/features/vue-cli:2": {},
+		"ghcr.io/devcontainers-extra/features/gradle-sdkman:2": {}
 	},
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"github.vscode-github-actions"
+				"github.vscode-github-actions",
+				"Vue.volar"
 			]
 		}
 	}
