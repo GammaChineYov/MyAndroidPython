@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 蓝牙相关组件容器 -->
+    <LinearLayout
+        android:id="@+id/bluetooth_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_scan_bluetooth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="扫描蓝牙设备" />
+
+        <ListView
+            android:id="@+id/bluetooth_devices_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp" />
+        
+    </LinearLayout>
+
+    <!-- 收发相关组件容器 -->
+    <LinearLayout
+        android:id="@+id/message_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"> <!-- 默认隐藏 -->
+
+        <!-- 编码格式选择下拉框 -->
+        <Spinner
+            android:id="@+id/encoding_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/select_encoding_prompt" />
+
+        <Spinner
+        android:id="@+id/line_separator_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="选择换行符" />
+        
+        <!-- 输入消息框 -->
+        <EditText
+            android:id="@+id/input_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入要发送的消息" />
+
+        <!-- 发送按钮 -->
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送" />
+
+        <!-- 停止按钮 -->
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="停止" />
+
+        <!-- 清屏按钮 -->
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清屏" />
+
+        <!-- 滚动视图容器，包含接收消息的框 -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/received_messages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="接收到的消息"
+                android:textIsSelectable="true" /> <!-- 支持选择和复制内容 -->
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

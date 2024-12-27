@@ -19,7 +19,10 @@
 		"vscode": {
 			"extensions": [
 				"github.vscode-github-actions",
-				"Vue.volar"
+				"Vue.volar",
+				"esafirm.kotlin-formatter",
+				"fwcd.kotlin",
+				"christian-kohler.path-intellisense"
 			]
 		}
 	}

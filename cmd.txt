@@ -21,3 +21,12 @@ yes|sdkmanager --licenses
 
 yarn add qrcode
 yarn add vue@^3
+
+./gradlew assembleDebug
+./gradlew build
+./gradlew clean
+
+
+* What went wrong:
+Execution failed for task ':app:checkDebugDuplicateClasses'.
+> A failure occurred while executing com.android.build.gradle.internal.tasks.CheckDuplicatesRunnable

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">UnimpDemo</string>
+    <string name="select_encoding_prompt">选择编码格式</string>
+    <string-array name="encoding_options">
+        <item>GBK</item>
+        <item>GB2312</item>
+        <item>UTF-8</item>
+        <item>ISO-8859-1</item>
+        <item>US-ASCII</item>
+        <item>UTF-16</item>
+        <item>UTF-16LE</item>
+        <item>UTF-16BE</item>
+        <item>Big5</item>
+        <item>GB18030</item>
+        <item>HZ-GB-2312</item>
+    </string-array>
+</resources>
